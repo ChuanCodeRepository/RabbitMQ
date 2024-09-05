@@ -1,0 +1,16 @@
+spring:
+  rabbitmq:
+    virtual-host: /
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+mq:
+  exchangeName: exchange.direct.delay
+  normalQueueNameA: queue.direct.delay.a
+  normalQueueNameB: queue.direct.delay.b
+  deadQueueName: queue.direct.dead
+  normalRoutingKeyA: delay.a
+  normalRoutingKeyB: delay.b
+  deadRoutingKey: dead

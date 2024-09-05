@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    virtual-host: /
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+mq:
+  exchange-name: exchange.direct.normal
+  backup-exchange-name: exchange.fanout.backup
+  queue-name: queue.direct.normal
+  backup-queue-name: queue.direct.backup
+  routing-key: normal
+  backup-routing-key: backup

@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    virtual-host: /
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+mq:
+  normalExchangeName: exchange.direct.normal.3
+  deadExchangeName: exchange.direct.dead.3
+  normalQueueName: queue.direct.normal.3
+  deadQueueName: queue.direct.dead.3
+  normalRoutingKey: info.3
+  deadRoutingKey: dead.3

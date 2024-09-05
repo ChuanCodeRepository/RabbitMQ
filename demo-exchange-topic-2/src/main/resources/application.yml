@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    virtual-host: /
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+mq:
+  exchangeName: exchange.topic
+  queueAName: queue.topic.a
+  queueBName: queue.topic.b
+
+server:
+  port: 80
